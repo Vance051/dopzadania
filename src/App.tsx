@@ -51,7 +51,7 @@ function App() {
         <button onClick={deleteTodos}>Delete me..</button>
         <div>
             <Button callback={addNewItem}/>
-            <Input  setNewTitle={setNewTitle} newTitle={newTitle}/>
+            <Input callback={addNewItem} setNewTitle={setNewTitle} newTitle={newTitle}/>
         </div>
         <ul>
             {todos.map(value => {
